@@ -1,0 +1,518 @@
+navbar-expand-sm navbar-light bg-light{
+    background-color: blueviolet;
+}
+fa-bars a1{
+    border: 1px solid black;
+}
+.logo{
+    max-height: 20px;
+    flex: auto;
+    margin-left: 2px;
+}
+.search_form{
+    float: 1
+}
+
+.avatavideoer{
+    margin: auto;
+    max-width: 10px;
+    max-height: 10px;
+}
+.headerSideBar{
+    text-align:initial;
+    margin-top: 1px;
+    
+}
+/* begin thông báo */
+.notification{
+    width: 500px; 
+    height: 700px; 
+    overflow: auto;
+    margin: auto;
+    /* font-size: 18px; */
+}
+.notification :hover{
+    background: #e0dadd;
+}
+@media(max-width:576px){
+    .notification{
+        width: 300px;
+    }
+}
+/* end thông báo */
+/* begin sideBar */
+.sideBar{
+    /* margin-top: flex; */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #000; */
+    min-height: 100vh;
+    color: rgb(74, 180, 184);
+    
+}
+.navigation{
+    position: fixed;
+    /* cố định tại một điểm */
+    width: 290px;
+    height: 100%;
+    background: #f5f6f7;
+    transition: 0.1s;
+    /* thời gian chuyển động */
+    overflow: hidden;
+    /* Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
+    margin-top: 50px;
+}
+.navigation:hover,
+.navigation.active{
+    /* margin-top: 80px; */
+    width: 300px;
+    z-index: 1;
+}
+.navigation ul{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    margin-left: -50px;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background: #e0dadd;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #303636;
+}
+.navigation ul li a .Icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .Icon .fa{
+    font-size: 24px;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: normal;
+}
+
+.toggle.active{
+    background-color:floralwhite;
+}
+@media(max-width:576px){
+    .navigation{
+        margin-top: -50px;
+    }
+}
+
+@media(max-width: 1200px){
+    .navigation{
+        width: 35px;
+
+    }
+    .navigation.active{
+        left:0px;
+        /* width: 100%; */
+    }
+}
+@media(max-width: 992px){
+    .navigation{
+        left:-360px;
+        margin-top: 80px;
+    }
+    .navigation.active{
+        left:0px;
+        /* width: 100%; */
+    }
+}
+/* end sideBar */
+/* begin navigation1  */
+.navigation1{
+    position: fixed;
+    /* cố định tại một điểm */
+    width: 400px;
+    height: 100%;
+    /* background: #f5f6f7; */
+    transition: 0.1s;
+    /* thời gian chuyển động */
+     margin-top: 50px;
+}
+
+
+.navigation1 ul{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    margin-left: -50px;
+}
+.navigation1 ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation1 ul li:hover{
+    background: #e0dadd;
+}
+.navigation1 ul li a{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #303636;
+}
+.navigation1 ul li a .Icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation1 ul li a .Icon .fa{
+    font-size: 24px;
+}
+.navigation1 ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: normal;
+}
+/* end navigation1 */
+.veoVideo{
+    text-align: end;
+    margin-top: 0.5px;
+}
+.imgavata{
+    max-height: 30px;
+    text-align: center;
+}
+.formdangky{
+    border: 2px solid rgb(216, 213, 213);
+    margin-top: 50px;
+    /* max-width: 600px; */
+    
+}
+
+.titleNextvideo{
+    margin-bottom: 5px;
+}
+.size-font{
+    font-size: small;
+}
+/* begin .recomendedVideos*/
+.recommendedVideos{
+    flex: 0.8;
+    background-color: rgb(241, 237, 232);
+    padding: 40 20;
+    padding-bottom: 0cm;
+}
+.recommendedVideos>h2{
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.recomendedVideos_videos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.videoCard{
+    margin-bottom: 40px ;
+    width: 270px;
+    
+}
+.videoCard_thumbnail{
+    height: 140px;
+    width: 250px;
+}
+.videoCard_info{
+    display: flex;
+    margin-top: 10px;
+    padding-right: 10;
+}
+
+.videoCard_text{
+    margin-left: 15px;
+}
+.videoCard_text> h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.videoCard_text> p {
+    font-size: 14px;
+    color: gray;
+}
+
+.nameUser{
+    text-decoration: none;
+    color: gray;
+}
+.nameUser:hover{
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+}
+.statisticalVideo{
+    color: gray;
+    display: flex;
+    justify-content: space-around 
+}
+.statisticalVideo div{
+    margin-top: 10px;
+}
+.statisticalVideo button{
+    color: gray;
+}
+.video_avatar{
+    height: 30px;
+    width: 30px;
+    
+}
+.test{
+    display: flex;
+}
+.logo_header{
+    flex: 1;
+}
+/* begin playVideo */
+.bodyWhatching{
+    margin-top: 600px;
+}
+.videoPlay{
+    margin-top: 20px;
+}
+.videoPlaying{
+    margin-top: 50px;
+    padding-top: 10px;
+}
+.nameUserWhatching{
+    margin: 10px;
+}
+.nameUserWhatching a p{
+    font-size: 20px
+}
+.nameUserWhatching a p{
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    margin: auto;
+     margin-right: 5px;
+     white-space: nowrap; 
+     width: 200px; 
+     overflow: hidden;
+     text-overflow: ellipsis; 
+    
+}
+.nameUserWhatching a p:hover{
+    text-decoration: none;
+    color: rgb(170, 14, 14);
+
+}
+@media(max-width:576px){ 
+    .videoPlaying{
+        /* margin-top: 80px; */
+       
+        padding-top: 10px;
+    }
+}
+@media(max-width:1200px){
+    .videoCard{
+        margin-left: 90px;
+    }
+}
+/* begin intVideo */
+.headerCommented{
+    height: 65px;
+}
+.iconLikeComment{
+    margin-right:40px; 
+    border:2px;
+    border-radius: .25rem!important;
+    padding-left: 10px; 
+    padding-right: 10px;
+    height: 50px;
+    margin: 4px;
+    margin-right: 5px;
+    max-width: 70px;
+}
+.iconLikeComment p{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.iconLikeVideo div{
+    margin-left: 5px;
+}
+.likeTextVideo{
+    width: 60px;
+    height: 50px;
+}
+.likeTextVideo p{
+    height: 10px;
+    margin-left: 5px;
+}
+.iconLikeVideo{
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.likeText{
+    margin-left: 3px;
+    margin: 1px;
+    padding: 1px; 
+    width: 60px;
+    height: 55px;
+}
+.likeText p{
+    height: 20px;
+}
+.shareVideo{
+    height: 50px;
+    margin-top: 5px;
+}
+.shareVideo a i{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.shareVideo p{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/* end intVideo */
+/* begin comment */
+    .newComment{
+        margin-top:10px;
+        margin-bottom: 20px;
+    }
+    .img-video_avatar{
+        margin: 1px;
+        width: 40px;
+        height: 40px;
+    }
+    .imgAvatar{
+        height: 400px; 
+        width: 90%
+    }
+    .avatar{
+        width: 200px;height: 200px;z-index: 1;margin-top: -100px;
+    }
+    .nameCommented{
+        margin: 10px;
+        margin-left: 2px;
+        
+    }
+    .nameCommented a {
+        margin: 2px;
+    }
+    .headerCommented p {
+        margin: auto;
+        margin-right: 10px;
+    }
+/* end comment */
+/* end videoPlay */
+/* begin nextVideo */
+.nextVideo{
+    min-width: 300px; 
+    
+    background: #dbe4e4;
+    margin-top: 100px;
+}
+
+.videoCard{margin: 5px}
+@media(min-width:1000px){
+    .videoCard{
+        margin-right: 80px;
+    }
+}
+/* end nextVideo */
+/* begin user */
+    .bodyUser{
+        margin-top:20px;
+    }
+    .imgListVideo{
+        width: 180px;
+        height: 200px;
+    }
+    
+/* end */
+/* begin newsfeed */
+.newsfeed{
+    margin-top: 100px;
+}
+.imgNews{
+    max-width: 750px;
+    max-height: 450px;
+}
+/* end newsfeed */
+.subsUser{
+    
+    max-width: 250px;
+    max-height: 200px;
+    padding-top: 10px;
+    margin: auto;
+}
+.subsUser button{
+    width: 150px;
+    margin-left: 10px;
+    height: 50px;
+    background-color: rgb(75, 157, 196);
+    border: none;
+    padding: auto;
+    color: hsl(120, 44%, 93%);
+}
+.subsUser p{
+    color: hsl(120, 3%, 46%);
+}
+.newVideoButton{
+    width: 150px;
+    margin-left: 10px;
+    height: 50px;
+    background-color: rgb(75, 157, 196);
+    border: none;
+    padding: auto;
+    color: hsl(120, 44%, 93%);
+}
+.newVideoButton p{
+    color: hsl(120, 3%, 46%);
+}
+.newVideoButton i{
+ margin-right: 5px;
+}
+.iconToolImg i {
+ color: #000;
+ background-color: #f1e9e9;
+ margin-right: 100px
+}
+.iconToolImg i:hover{
+    background-color: #000;
+    color: #f1e9e9;
+}
+.UserCard{
+    /* margin-top: 20px;
+    margin-left: 10px */
+    margin-bottom:20px;
+}
+.iconcommentShareNews{
+    display: flex;
+    justify-content: flex-end
+}
+.iconcommentShareNews button{
+    margin: 10px;
+}

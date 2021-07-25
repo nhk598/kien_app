@@ -1,0 +1,15 @@
+-- CreateTable
+CREATE TABLE "View" (
+    "id" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "userId" TEXT,
+    "videoId" TEXT NOT NULL,
+
+    PRIMARY KEY ("id")
+);
+
+-- AddForeignKey
+ALTER TABLE "View" ADD FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "View" ADD FOREIGN KEY ("videoId") REFERENCES "Video"("id") ON DELETE CASCADE ON UPDATE CASCADE;

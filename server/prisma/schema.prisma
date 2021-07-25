@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+model User {
+  id           String         @id @default(uuid())
+  createdAt    DateTime       @default(now())
+  username     String
+  email        String         @unique
+  avatar       String         @default("https://reedbarger.nyc3.digitaloceanspaces.com/default-avatar.png")
+  cover        String         @default("https://reedbarger.nyc3.digitaloceanspaces.com/default-cover-banner.png")
+  about        String         @default("")
+  password     String         @default("")
+  videos       Video[]
+  videoLikes   VideoLike[]
+  view         View[]
+  comment      Comment[]
+  subscribers  UserSubscription[] @relation("subscriber")
+  subscribedTo UserSubscription[] @relation("subscribedTo")
+}
+
+model Video {
+  id          String      @id @default(uuid())
+  createdAt   DateTime    @default(now())
+  title       String
+  description String?
+  url         String
+  thumbnail   String
+  document    String      @default("")
+  userId      String
+  user        User        @relation(fields: [userId], references: [id])
+  videoLikes  VideoLike[]
+  view        View[]
+  comment      Comment[]
+}
+
+model VideoLike {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  like      Int      @default(0)
+  userId    String
+  videoId   String
+  user      User     @relation(fields: [userId], references: [id])
+  video     Video    @relation(fields: [videoId], references: [id])
+}
+
+model View {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  userId    String?
+  videoId   String
+  user      User?    @relation(fields: [userId], references: [id])
+  video     Video    @relation(fields: [videoId], references: [id])
+}
+
+model Comment {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  text      String
+  userId    String
+  videoId   String
+  user      User     @relation(fields: [userId], references: [id])
+  video     Video    @relation(fields: [videoId], references: [id])
+}
+
+model UserSubscription {
+  id             String   @id @default(uuid())
+  createdAt      DateTime @default(now())
+  subscriberId   String
+  subscribedToId String
+  subscriber     User     @relation("subscriber", fields: [subscriberId], references: [id])
+  subscribedTo   User     @relation("subscribedTo", fields: [subscribedToId], references: [id])
+}

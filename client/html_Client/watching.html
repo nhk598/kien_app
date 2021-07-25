@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>whatching video</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- import css -->
+    <link rel="stylesheet" href="./home.css">
+    <!-- Bootstrap CSS -->
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- import icon -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+     <!-- Bootstrap CSS v-5.0.1-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    </head>
+  <body>
+           
+             <div class="container-fluid">
+                    <!-- begin header -->
+                        <div class="row">
+                            <div class="col-xl-12 d-flex flex-sm-column">
+                                <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top ">
+                                            <!-- "fixed-top" cố định ở tốp -->
+                                                    <div class="IconMenu flex-fill ">
+                                                        <!-- begin iconMenu -->
+                                                        <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                                        <i class="fas fa-bars a1 mx-t toggle" ></i>
+                                                        </a>
+                                                        
+                                                        <!-- begin sidebar -->
+                                                        <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                                            <div class="offcanvas-header" >
+                                                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="offcanvas-body">
+                                                                <!-- begin iconSideBar -->
+                                                                    <div class="col-1 sideBar ">
+                                                                        <div class="navigation1" >
+                                                                        <ul>
+                                                                            <li>
+                                                                            <a href="./home.html">
+                                                                                <span class="Icon"><i class="fas fa-home"></i></span>
+                                                                                <span class="title">Trang chủ</span>
+                                                                            </a>
+                                                                            </li>
+                                                                            <li>
+                                                                            <a href="./user.html">
+                                                                                <span class="Icon"><i class="fas fa-user-tie"></i></span>
+                                                                                <span class="title">Kênh của bạn</span>
+                                                                            </a>
+                                                                            </li>
+                                                                            <li>
+                                                                            <a href="#">
+                                                                                <span class="Icon"><i class="fab fa-hotjar"></i></span>
+                                                                                <span class="title">Bản tin</span>
+                                                                            </a>
+                                                                            </li>
+                                                                            
+                                                                            <li>
+                                                                            <a href="#">
+                                                                                <span class="Icon"><i class="fas fa-hourglass-start"></i></span>
+                                                                                <span class="title">Đang theo dõi gần đây</span>
+                                                                            </a>
+                                                                            </li>
+                                                                            
+                                                                            <li>
+                                                                            <a href="#">
+                                                                                <span class="Icon"><i class="fas fa-user-clock"></i></span>
+                                                                                <span class="title">Video xem sau</span>
+                                                                            </a>
+                                                                            </li>
+                                                                            
+                                                                            <li>
+                                                                            <a href="#">
+                                                                                <span class="Icon"><i class="fas fa-calendar-check"></i></span>
+                                                                                <span class="title">Kênh đă đăng ký</span>
+                                                                            </a>
+                                                                            </li>
+                                                                            
+                                                                        </ul>
+                                                                        </div> 
+                                                                    </div>
+                                                                <!-- end iconSideBar -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- end sidebar -->
+                                                        <!-- end iconMenu -->
+                                                        
+                                                        <!-- begin logo -->
+                                                        <a class="navbar-brand" href="./home.html">
+                                                            <img src="./logo.jpg" class="logo" alt="">
+                                                        </a>
+                                                        <!-- end logo -->
+                                                    </div>
+                                            
+                                            
+                                                <!-- begin search form -->
+                                                    <form class="d-flex">
+                                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                    <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                                                    </form>
+                                                <!-- end search from -->
+                                                <!-- begin iconHeader -->
+                                                    <div class="flex-fill">
+                                                        
+                                                        <div class="  bg-light">
+                                                            <div class="nav navbar-expand " id="collapsibleNavId">
+                                                                    <!-- <i class="far fa-bell-on"></i> -->
+                                                                    <ul class="navbar-nav  navbar-expand-sm ml-auto ">
+                                                                        <!-- begin thao luận -->
+                                                                            <div class="btn-group dropstart">
+                                                                                <!-- icon thao luan -->
+                                                                                <button type="button" class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-placement="bottom" title="thông báo">
+                                                                                
+                                                                                <a class="nav-link " href="#">
+                                                                                    <!-- icon -->
+                                                                                    <i class="fas fa-comments"></i> 
+                                                                                    <!-- so luong thảo luận mới-->
+                                                                                    <span class="badge bg-primary">4</span>
+                                                                                </a>
+                                                                            
+                                                                                </button>
+                                                                                <!-- end icon tao luan -->
+                                                                                <!-- drop danh sach thảo luận -->
+                                                                                    <ul class="dropdown-menu notification">
+                                                                                        <!-- begin card comment -->
+                                                                                        <div class="d-flex-column cardComment">
+                                                                                            <!-- begin heder card comment -->
+                                                                                            <div class="headerCommented border d-flex">
+                                                                                                <!-- bergin card like  -->
+                                                                                                <div class="d-flex border iconLikeComment" >
+                                                                                                    <!-- begin iconLike -->
+                                                                                                    <div class="d-flex flex-column"  >
+                                                                                                        <a href=""><i class="fas fa-chevron-up"></i></a>
+                                                                                                        <a href=""><i class="fas fa-chevron-down"></i></a>
+                                                                                                    </div>
+                                                                                                    <!-- end iconLike -->
+                                                                                                    <!-- begin likeText -->
+                                                                                                    <div class="d-flex-column likeText">
+                                                                                                        <p>2000</p>
+                                                                                                        <p>Like</p>
+                                                                                                    </div>
+                                                                                                    <!-- end likeText -->
+                                                                                                    
+                                                                                                </div>
+                                                                                                <!-- end card like-->
+                                                                                                <!-- begin card info author video -->
+                                                                                                     <!-- begin card author -->
+                                                                                                    <div class="d-flex nameUserWhatching" >
+                                                                                                        <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img></a>
+                                                                                                        <a href="./user.html" ><p>Tài chính và kinh doanh</p></a> 
+                                                                                                    </div>
+                                                                                                    <!-- end card author -->
+                                                                                                 <!-- end card info author video -->
+                                                                                                 <p >10 ngày trước</p>
+                                                                                            </div>
+                                                                                            <!-- end heder card comment -->
+                                                                                            <!-- begin text commented -->
+                                                                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nam cumque dolorem facere, hic fugit, magni similique labore ipsa unde placeat, mollitia quam aspernatur nihil ab architecto! Autem, facere nihil?</p>
+                                                                                            <!-- end text commented -->
+                                                                                            <!-- begin button new comment -->
+                                                                                                <button class="btn border d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#abuttonNewComment" aria-expanded="false" aria-controls="abuttonNewComment">
+                                                                                                Trả lời
+                                                                                                </button>
+                                                                                              <div class="collapse" id="abuttonNewComment">
+                                                                                                <div class="card card-body">
+                                                                                                  <!-- begin new comment -->
+                                                                                                    <div class="d-flex-column newComment" >
+                                                                                                        
+                                                                                                        <div class="headerNewComment d-flex input-group ">
+                                                                                                            <span class="input-group-text" id="basic-addon1" >
+                                                                                                                <img class="img- video_avatar" alt="" src="./gai.jpg" ></img>
+                                                                                                            </span>
+                                                                                                            <input type="text" style="height: 50px;" class="form-control" placeholder="Bình luận của bạn..." aria-label="Username" aria-describedby="basic-addon1">
+                                                                                                        </div>
+                                                                                                        
+                                                                                                        <div class="d-flex " style="margin-top:10px">
+                                                                                                            <button class="btn  me-md-2 ml-auto" type="button">Gửi</button>
+                                                                                                            <button class="btn " type="button">Hủy</button>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <!-- end new comment -->
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <!-- end button new comment -->
+                                                                                            <!-- begin phan hoi  -->
+                                                                                            <div class="row">
+                                                                                                <div class="col-10 ml-auto" >
+                                                                                                    <a class="btn " data-bs-toggle="collapse" href="#buttonListComment" role="button" aria-expanded="false" aria-controls="buttonListComment">
+                                                                                                        Xem các câu trả lời
+                                                                                                      </a>
+                                                                                                      <div class="collapse" id="buttonListComment">
+                                                                                                        <div class="card card-body">
+                                                                                                            <!-- begin heder card comment -->
+                                                                                                            <div class="headerCommented border d-flex">
+                                                                                                                <!-- bergin card like  -->
+                                                                                                                <div class="d-flex border iconLikeComment" >
+                                                                                                                    <div class="d-flex flex-column"  >
+                                                                                                                        <a href=""><i class="fas fa-chevron-up"></i></a>
+                                                                                                                        <a href=""><i class="fas fa-chevron-down"></i></a>
+                                                                                                                    </div>
+                                                                                                                    <p>1000 Like</p>
+                                                                                                                </div>
+                                                                                                                <!-- end card like-->
+                                                                                                                <!-- begin card info author video -->
+                                                                                                                 <!-- begin card author -->
+                                                                                                                <div class="d-flex nameUserWhatching" >
+                                                                                                                    <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img></a>
+                                                                                                                    <a href="./user.html" ><p>Tài chính và kinh doanh</p></a> 
+                                                                                                                </div>
+                                                                                                                <!-- end card author -->
+                                                                                                                <!-- end card info author video -->
+                                                                                                                <p >10 ngày trước</p>
+                                                                                                            </div>
+                                                                                                            <!-- end heder card comment -->
+                                                                                                            <!-- begin text commented -->
+                                                                                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nam cumque dolorem facere, hic fugit, magni similique labore ipsa unde placeat, mollitia quam aspernatur nihil ab architecto! Autem, facere nihil?</p>
+                                                                                                            <!-- end text commented -->
+                                                                                                            <button class="ml-auto">Phản Hồi</button>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!-- end phan hoi  -->
+
+                                                                                        </div>
+                                                                                        <!--end card comment -->
+                                                                                    
+                                                                                    </ul>
+                                                                                <!-- end drop danh sach thong bao -->
+                                                                            </div>
+                                                                        <!-- end thảo luận -->
+                                                                        <!-- begin thong bao -->
+                                                                        
+                                                                            <div class="btn-group dropstart">
+                                                                                <!-- icon thong bao -->
+                                                                                <button type="button" class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-placement="bottom" title="thông báo">
+                                                                                
+                                                                                <a class="nav-link " href="#">
+                                                                                    <!-- icon -->
+                                                                                    <i class="far fa-bell"></i> 
+                                                                                    <!-- so luong thong bao -->
+                                                                                    <span class="badge bg-primary">4</span>
+                                                                                </a>
+                                                                            
+                                                                                </button>
+                                                                                <!-- end icon thong bao -->
+                                                                                <!-- drop danh sach thong bao -->
+                                                                                    <ul class="dropdown-menu notification">     
+                                                                                        
+                                                                                        <!-- một thao luận -->
+                                                                                        <div class="d-flex">
+                                                                                            <div class="nameCommented d-flex">
+                                                                                                <a href=""> <img class="img- video_avatar" alt="" src="./gai.jpg" ></img></a>
+                                                                                                <div class="d-flex">
+                                                                                                    <p>Tài chính kinh doanh </p>
+                                                                                                     &nbsp;
+                                                                                                    <p>đã đăng video mới</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                        <!-- end -->
+                                                                                        
+                                                                                    
+                                                                                    </ul>
+                                                                                <!-- end drop danh sach thong bao -->
+                                                                            </div>
+                                                                        
+                                                                        
+                                                                        <!-- end thong bao -->
+                                                                        <!-- begin icon userMenu -->
+                                                                        
+                                                                            <div class="btn-group dropstart">
+                                                                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <img src="./gai.jpg" style="height: 25px;" alt="">
+                                                                                </button>
+                                                                                <ul class="dropdown-menu">
+                                                                                    <!-- Dropdown menu links -->
+                                                                                            <li><a class="dropdown-item" href="./user.html">Tài khoản</a></li>
+                                                                                            <li><a class="dropdown-item" href="#">Đóng góp ý kiến</a></li>
+                                                                                            <li><hr class="dropdown-divider"></li>
+                                                                                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                                                                </ul>
+                                                                                </div>
+                                                                        
+                                                                        
+                                                                        <!-- end icon userMenu -->
+                                                                    </ul>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                <!-- end iconHeader -->
+                                </nav>
+                            </div>
+                        </div>
+                     <!-- end header -->
+                    <!-- body whatching -->
+                        <div class="row bodyWhatching">
+                                     <!-- begin videoPlaying -->
+                                        <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 mx-auto d-md-flex videoPlaying">
+                                          <!-- begin card video -->
+                                            <div class="card border" style="margin-top: 50px;">
+                                                <!-- begin heard card videoPlaying -->
+                                                <video width="100%" height="100%" controls class="videoPlay mx-auto" style="max-height:480px">
+                                                    <source src="./video1.mp4" type="video/mp4">
+                                                    <source src="dammio.ogg" type="video/ogg">
+                                                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                                                </video>
+                                                <!-- end heard card videoPlaying -->
+                                                <!-- begin card body data video -->
+                                                <div class="card-body">
+                                                    <!-- begin name + thong ke video + like + share video -->
+                                                        <div class="dataVideoPlaying">
+                                                            <!-- name video -->
+                                                            <h4>VNIndexch cán mốc 1500 điểm và những điều cần lưu ý</h4>
+                                                            <!-- begin thong ke video + like + share video -->
+                                                            <div class="intVideo d-flex justify-content-between" >
+                                                                <!--begin statistical(thống kê) int views-comment-datetime  -->
+                                                                
+                                                                <div class="statisticalVideo d-flex">
+                                                                    <div class="d-flex">
+                                                                        <p>2.500</p>
+                                                                        <p>views</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <div class="d-flex">
+                                                                        <p>1000</p>
+                                                                        <p>like</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <div><p>1h</p></div>
+                                                                    
+                                                                  </div>
+                                                                <!--end statistical(thống kê) int views-comment-datetime  -->
+                                                                <!-- begin like and share video -->
+                                                                <div class="iconVideoPlaying d-flex " >
+                                                                    <!-- like -->
+                                                                    <!-- bergin card like  -->
+                                                                    <div class="iconLikeVideo d-flex border" >
+                                                                        <!-- begin iconLike -->
+                                                                        <div class="d-flex flex-column"  >
+                                                                            <a href=""><i class="fas fa-chevron-up"></i></a>
+                                                                            <a href=""><i class="fas fa-chevron-down"></i></a>
+                                                                        </div>
+                                                                        <!-- end iconLike -->
+                                                                        <!-- begin likeText -->
+                                                                        <div class="d-flex flex-column likeTextVideo ">
+                                                                            <p>1000</p>
+                                                                            <p>Like</p>
+                                                                        </div>
+                                                                        <!-- end likeText -->
+                                                                    </div>
+                                                                    <!-- end card like-->
+                                                                    <!-- share -->
+                                                                    <div class="shareVideo border  d-flex" >
+                                                                        <a href=""><i class="fas fa-share" ></i></a>
+                                                                        <p>CHIA SẺ</p>
+                                                                        
+                                                                    </div>       
+                                                                </div> 
+                                                                <!-- end like and share video --> 
+                                                            </div>
+                                                             <!-- end thong ke video like share video -->
+                                                        </div>
+                                                    <!-- end name + thong ke video + like + share video -->
+                                                    <!-- begin gioi thieu comment document -->
+                                                        <div class="tab-content" id="nav-tabContent">
+                                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                                  
+                                                                    <div class="bodyUser" style="margin-top:20px;">
+                                                                       <!-- begin menu introduce comment document -->
+                                                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                                        
+                                                                        <li class="nav-item" role="presentation">
+                                                                            <button class="nav-link active" id="introduce-tab" data-bs-toggle="tab" data-bs-target="#introduce" type="button" role="tab" aria-controls="introduce" aria-selected="true">Giới thiệu</button>
+                                                                        </li>
+                                                                        <li class="nav-item" role="presentation">
+                                                                            <button class="nav-link" id="comments-tab" data-bs-toggle="tab" data-bs-target="#comments" type="button" role="tab" aria-controls="comments" aria-selected="false">thảo luận</button>
+                                                                        </li>
+                                                                        <li class="nav-item" role="presentation">
+                                                                            <button class="nav-link" id="document-tab" data-bs-toggle="tab" data-bs-target="#document" type="button" role="tab" aria-controls="document" aria-selected="false">Tài liệu</button>
+                                                                        </li>
+                                                                        </ul>
+                                                                        <!-- end menu introduce  -->
+                                                                        <!-- begin connect menu introduce comment document -->
+                                                                        <div class="tab-content">
+                                                                            <!-- begin connect menu introduce -->
+                                                                                <div class="tab-pane show active" id="introduce" role="tabpanel" aria-labelledby="introduce-tab">
+                                                                                        <!-- begin card author -->
+                                                                                        <div class="d-flex nameUserWhatching" >
+                                                                                            <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img></a>
+                                                                                            <a href="./user.html" ><p>Tài chính và kinh doanh</p></a> 
+                                                                                        </div>
+                                                                                        <!-- end card author -->
+                                                                                        <!-- begin card mô tả -->
+                                                                                        <h5>Mô tả video: </h5>
+                                                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident architecto soluta tenetur quis porro voluptate, necessitatibus voluptates alias. Amet iusto quas molestias corrupti ab ex, perspiciatis iure quod dolor iste!</p>
+                                                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident architecto soluta tenetur quis porro voluptate, necessitatibus voluptates alias. Amet iusto quas molestias corrupti ab ex, perspiciatis iure quod dolor iste!</p>
+                                                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident architecto soluta tenetur quis porro voluptate, necessitatibus voluptates alias. Amet iusto quas molestias corrupti ab ex, perspiciatis iure quod dolor iste!</p>
+                                                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident architecto soluta tenetur quis porro voluptate, necessitatibus voluptates alias. Amet iusto quas molestias corrupti ab ex, perspiciatis iure quod dolor iste!</p>
+                                                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident architecto soluta tenetur quis porro voluptate, necessitatibus voluptates alias. Amet iusto quas molestias corrupti ab ex, perspiciatis iure quod dolor iste!</p>
+                                                                                        <!-- end card mô tả -->
+                                                                                    <!-- end connect introduce -->
+                                                                                    <!-- begin connect comment -->
+                                                                                </div>
+                                                                            <!-- end connect menu introduce  -->
+                                                                            <!-- begin connect menu comment -->
+                                                                                <div class="tab-pane" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+                                                                                    <div class="binhLuan d-flex-column fa-border">
+                                                                                       
+                                                                                        <!-- begin new comment -->
+                                                                                        <div class="d-flex-column newComment" >
+                                                                                            
+                                                                                                <div class="headerNewComment d-flex input-group ">
+                                                                                                    <span class="input-group-text" id="basic-addon1" >
+                                                                                                        <img class="img- video_avatar" alt="" src="./gai.jpg" ></img>
+                                                                                                    </span>
+                                                                                                    <input type="text" style="height: 50px;" class="form-control" placeholder="Đặt câu hỏi hoăc bình luận của bạn..." aria-label="Username" aria-describedby="basic-addon1">
+                                                                                                </div>
+                                                                                                
+                                                                                                <div class="d-flex " style="margin-top:10px">
+                                                                                                    <button class="btn  me-md-2 ml-auto" type="button">Gửi</button>
+                                                                                                    <button class="btn " type="button">Hủy</button>
+                                                                                                  </div>
+                                                                                        </div>
+                                                                                        <!-- end new comment -->
+                                                                                        <!-- begin card comment -->
+                                                                                        <div class="d-flex-column cardComment">
+                                                                                            <!-- begin heder card comment -->
+                                                                                            <div class="headerCommented border d-flex">
+                                                                                                <!-- bergin card like  -->
+                                                                                                <div class="d-flex border iconLikeComment" >
+                                                                                                    <!-- begin iconLike -->
+                                                                                                    <div class="d-flex flex-column"  >
+                                                                                                        <a href=""><i class="fas fa-chevron-up"></i></a>
+                                                                                                        <a href=""><i class="fas fa-chevron-down"></i></a>
+                                                                                                    </div>
+                                                                                                    <!-- end iconLike -->
+                                                                                                    <!-- begin likeText -->
+                                                                                                    <div class="d-flex-column likeText">
+                                                                                                        <p>2000</p>
+                                                                                                        <p>Like</p>
+                                                                                                    </div>
+                                                                                                    <!-- end likeText -->
+                                                                                                    
+                                                                                                </div>
+                                                                                                <!-- end card like-->
+                                                                                                <!-- begin card info author video -->
+                                                                                                     <!-- begin card author -->
+                                                                                                    <div class="d-flex nameUserWhatching" >
+                                                                                                        <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img></a>
+                                                                                                        <a href="./user.html" ><p>Tài chính và kinh doanh</p></a> 
+                                                                                                    </div>
+                                                                                                    <!-- end card author -->
+                                                                                                 <!-- end card info author video -->
+                                                                                                 <p >10 ngày trước</p>
+                                                                                            </div>
+                                                                                            <!-- end heder card comment -->
+                                                                                            <!-- begin text commented -->
+                                                                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nam cumque dolorem facere, hic fugit, magni similique labore ipsa unde placeat, mollitia quam aspernatur nihil ab architecto! Autem, facere nihil?</p>
+                                                                                            <!-- end text commented -->
+                                                                                            <!-- begin button new comment -->
+                                                                                                <button class="btn border d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#buttonNewComment" aria-expanded="false" aria-controls="buttonNewComment">
+                                                                                                Trả lời
+                                                                                                </button>
+                                                                                              <div class="collapse" id="buttonNewComment">
+                                                                                                <div class="card card-body">
+                                                                                                  <!-- begin new comment -->
+                                                                                                    <div class="d-flex-column newComment" >
+                                                                                                        
+                                                                                                        <div class="headerNewComment d-flex input-group ">
+                                                                                                            <span class="input-group-text" id="basic-addon1" >
+                                                                                                                <img class="img- video_avatar" alt="" src="./gai.jpg" ></img>
+                                                                                                            </span>
+                                                                                                            <input type="text" style="height: 50px;" class="form-control" placeholder="Bình luận của bạn..." aria-label="Username" aria-describedby="basic-addon1">
+                                                                                                        </div>
+                                                                                                        
+                                                                                                        <div class="d-flex " style="margin-top:10px">
+                                                                                                            <button class="btn  me-md-2 ml-auto" type="button">Gửi</button>
+                                                                                                            <button class="btn " type="button">Hủy</button>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <!-- end new comment -->
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <!-- end button new comment -->
+                                                                                            <!-- begin phan hoi  -->
+                                                                                            <div class="row">
+                                                                                                <div class="col-10 ml-auto" >
+                                                                                                    <a class="btn " data-bs-toggle="collapse" href="#buttonListComment" role="button" aria-expanded="false" aria-controls="buttonListComment">
+                                                                                                        Xem các câu trả lời
+                                                                                                      </a>
+                                                                                                      <div class="collapse" id="buttonListComment">
+                                                                                                        <div class="card card-body">
+                                                                                                            <!-- begin heder card comment -->
+                                                                                                            <div class="headerCommented border d-flex">
+                                                                                                                <!-- bergin card like  -->
+                                                                                                                <div class="d-flex border iconLikeComment" >
+                                                                                                                    <div class="d-flex flex-column"  >
+                                                                                                                        <a href=""><i class="fas fa-chevron-up"></i></a>
+                                                                                                                        <a href=""><i class="fas fa-chevron-down"></i></a>
+                                                                                                                    </div>
+                                                                                                                    <p>1000 Like</p>
+                                                                                                                </div>
+                                                                                                                <!-- end card like-->
+                                                                                                                <!-- begin card info author video -->
+                                                                                                                 <!-- begin card author -->
+                                                                                                                <div class="d-flex nameUserWhatching" >
+                                                                                                                    <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img></a>
+                                                                                                                    <a href="./user.html" ><p>Tài chính và kinh doanh</p></a> 
+                                                                                                                </div>
+                                                                                                                <!-- end card author -->
+                                                                                                                <!-- end card info author video -->
+                                                                                                                <p >10 ngày trước</p>
+                                                                                                            </div>
+                                                                                                            <!-- end heder card comment -->
+                                                                                                            <!-- begin text commented -->
+                                                                                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nam cumque dolorem facere, hic fugit, magni similique labore ipsa unde placeat, mollitia quam aspernatur nihil ab architecto! Autem, facere nihil?</p>
+                                                                                                            <!-- end text commented -->
+                                                                                                            <!-- begin button new comment -->
+                                                                                                            <button class="btn border d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#a1buttonNewComment" aria-expanded="false" aria-controls="a1buttonNewComment">
+                                                                                                                Trả lời
+                                                                                                                </button>
+                                                                                                            <div class="collapse" id="a1buttonNewComment">
+                                                                                                                <div class="card card-body">
+                                                                                                                <!-- begin new comment -->
+                                                                                                                    <div class="d-flex-column newComment" >
+                                                                                                                        
+                                                                                                                        <div class="headerNewComment d-flex input-group ">
+                                                                                                                            <span class="input-group-text" id="basic-addon1" >
+                                                                                                                                <img class="img- video_avatar" alt="" src="./gai.jpg" ></img>
+                                                                                                                            </span>
+                                                                                                                            <input type="text" style="height: 50px;" class="form-control" placeholder="Bình luận của bạn..." aria-label="Username" aria-describedby="basic-addon1">
+                                                                                                                        </div>
+                                                                                                                        
+                                                                                                                        <div class="d-flex " style="margin-top:10px">
+                                                                                                                            <button class="btn  me-md-2 ml-auto" type="button">Gửi</button>
+                                                                                                                            <button class="btn " type="button">Hủy</button>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <!-- end new comment -->
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <!-- end button new comment -->
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!-- end phan hoi  -->
+
+                                                                                        </div>
+                                                                                        <!--end card comment -->
+                                                                                    </div>
+                                                                                </div>
+                                                                            <!-- end connect menu comment -->
+                                                                            <!-- begin connect menu doccument -->
+                                                                                <div class="tab-pane" id="document" role="tabpanel" aria-labelledby="document-tab">
+                                                                                    <h4>https://www.tailieu123.org/tham-khao-bai-tap-mon-ngan-hang-thuong-mai-chuyen-nganh-tai-chinh.html</h4>
+                                                                                    <h4>tài liệu số 2</h4>
+                                                                                    <a href="https://www.tailieu123.org/tham-khao-bai-tap-mon-ngan-hang-thuong-mai-chuyen-nganh-tai-chinh.html">tl1</a>
+                                                                                    <h4>tài liệu số 3</h4>
+                                                                                    <h4>tài liệu số 4</h4>
+                                                                                </div>
+                                                                            <!-- end connect menu comment -->
+                                                                        </div>
+                                                                        
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    <!-- begin gioi thieu comment document     -->
+                                                </div>
+                                                <!-- end card body data video -->
+                                            </div>    
+                                          <!-- begin card video -->  
+                                        </div>
+                                    <!-- end videoPlaying -->    
+                                    <!-- begin nextVideo -->
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4  ml-auto nextVideo"  style="margin-top: 100px;">
+                                                    
+                                            
+                                                    <!-- begin videoCard -->
+                                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 mr-auto">
+                                                        <div class="videoCard">
+                                                            <a href="./watching.html"><img class="videoCard_thumbnail" src="./bg_1.jpg" alt=""/></a>
+                                                            <div class="videoCard_info">
+                                                                <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img></a>
+                                                                <div class="videoCard_text ">
+                                                                    <h4>VNIndexch cán mốc 1500 điểm và những điều cần lưu ý</h4>
+                                                                    <a href="./user.html" class="nameUser"><p>Tài chính và kinh doanh</p></a> 
+                                                                    <div class="statisticalVideo d-flex">
+                                                                    <div class="d-flex">
+                                                                        <p>2.500</p>
+                                                                        <p>views</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <div class="d-flex">
+                                                                        <p>1000</p>
+                                                                        <p>like</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <p>1h</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>      
+                                                    <!-- end videoCard -->                         
+                                                    <!-- begin videoCard -->
+                                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 mr-auto">
+                                                        <div class="videoCard">
+                                                            <a href="./watching.html"><img class="videoCard_thumbnail" src="./bg_1.jpg" alt=""/></a>
+                                                            <div class="videoCard_info">
+                                                                <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img></a>
+                                                                <div class="videoCard_text ">
+                                                                    <h4>VNIndexch cán mốc 1500 điểm và những điều cần lưu ý</h4>
+                                                                    <a href="./user.html" class="nameUser"><p>Tài chính và kinh doanh</p></a> 
+                                                                    <div class="statisticalVideo d-flex">
+                                                                    <div class="d-flex">
+                                                                        <p>2.500</p>
+                                                                        <p>views</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <div class="d-flex">
+                                                                        <p>1000</p>
+                                                                        <p>like</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <p>1h</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>      
+                                                    <!-- end videoCard -->                         
+                                                    <!-- begin videoCard -->
+                                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 mr-auto">
+                                                        <div class="videoCard">
+                                                            <a href="./watching.html"><img class="videoCard_thumbnail" src="./bg_1.jpg" alt=""/></a>
+                                                            <div class="videoCard_info">
+                                                                <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img></a>
+                                                                <div class="videoCard_text ">
+                                                                    <h4>VNIndexch cán mốc 1500 điểm và những điều cần lưu ý</h4>
+                                                                    <a href="./user.html" class="nameUser"><p>Tài chính và kinh doanh</p></a> 
+                                                                    <div class="statisticalVideo d-flex">
+                                                                    <div class="d-flex">
+                                                                        <p>2.500</p>
+                                                                        <p>views</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <div class="d-flex">
+                                                                        <p>1000</p>
+                                                                        <p>like</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <p>1h</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>      
+                                                    <!-- end videoCard -->                         
+                                                    <!-- begin videoCard -->
+                                                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 mr-auto">
+                                                        <div class="videoCard">
+                                                            <a href="./watching.html"><img class="videoCard_thumbnail" src="./bg_1.jpg" alt=""/></a>
+                                                            <div class="videoCard_info">
+                                                                <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img></a>
+                                                                <div class="videoCard_text ">
+                                                                    <h4>VNIndexch cán mốc 1500 điểm và những điều cần lưu ý</h4>
+                                                                    <a href="./user.html" class="nameUser"><p>Tài chính và kinh doanh</p></a> 
+                                                                    <div class="statisticalVideo d-flex">
+                                                                    <div class="d-flex">
+                                                                        <p>2.500</p>
+                                                                        <p>views</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <div class="d-flex">
+                                                                        <p>1000</p>
+                                                                        <p>like</p>
+                                                                    </div>
+                                                                    <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                    <p>1h</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>      
+                                                    <!-- end videoCard -->                         
+                                            
+                                        </div>
+                                    <!-- end nextVideo -->
+                        </div>
+                    <!-- end body whatching -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- js bootstrap 5.0.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+ 
+</body>
+</html>

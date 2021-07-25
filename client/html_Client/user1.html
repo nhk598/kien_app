@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>User1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- import css -->
+    <link rel="stylesheet" href="./home.css">
+    <!-- import icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap CSS v-5.0.1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- begin header -->
+        <div class="row">
+            <div class="col-xl-12 d-flex flex-sm-column">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top ">
+                    <!-- "fixed-top" cố định ở tốp -->
+
+
+                    <div class="IconMenu flex-fill ">
+                        <!-- begin iconMenu -->
+                        <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <i class="fas fa-bars a1 mx-t toggle"></i>
+                        </a>
+
+                        <!-- begin sidebar -->
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <!-- begin iconSideBar -->
+                                <div class="col-1 sideBar ">
+                                    <div class="navigation1">
+                                        <ul>
+                                            <li>
+                                                <a href="./home.html">
+                                                    <span class="Icon"><i class="fas fa-home"></i></span>
+                                                    <span class="title">Trang chủ</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="./user.html">
+                                                    <span class="Icon"><i class="fas fa-user-tie"></i></span>
+                                                    <span class="title">Kênh của bạn</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="Icon"><i class="fab fa-hotjar"></i></span>
+                                                    <span class="title">Bản tin</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <span class="Icon"><i class="fas fa-hourglass-start"></i></span>
+                                                    <span class="title">Đang theo dõi gần đây</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <span class="Icon"><i class="fas fa-user-clock"></i></span>
+                                                    <span class="title">Video xem sau</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <span class="Icon"><i class="fas fa-calendar-check"></i></span>
+                                                    <span class="title">Kênh đă đăng ký</span>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- end iconSideBar -->
+                            </div>
+                        </div>
+                        <!-- end sidebar -->
+                        <!-- end iconMenu -->
+
+                        <!-- begin logo -->
+                        <a class="navbar-brand" href="./home.html">
+                            <img src="./logo.jpg" class="logo" alt="">
+                        </a>
+                        <!-- end logo -->
+                    </div>
+
+
+                    <!-- begin search form -->
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <!-- end search from -->
+                    <!-- begin iconHeader -->
+                    <div class="flex-fill">
+
+                        <div class="  bg-light">
+                            <div class="nav navbar-expand " id="collapsibleNavId">
+                                <!-- <i class="far fa-bell-on"></i> -->
+                                <ul class="navbar-nav  navbar-expand-sm ml-auto ">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fas fa-comments"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fas fa-cloud-upload-alt"></i></a>
+                                    </li>
+                                    <!-- begin thong bao -->
+                                    <div class="btn-group dropstart">
+                                        <!-- icon thong bao -->
+                                        <button type="button" class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-placement="bottom" title="thông báo">
+                                                                    
+                                                                    <!-- <a class="nav-link " href="#"> -->
+                                                                        <!-- icon -->
+                                                                        <i class="far fa-bell"></i> 
+                                                                        <!-- so luong thong bao -->
+                                                                        <span class="badge bg-primary">4</span>
+                                                                    <!-- </a> -->
+                                                        
+                                                                </button>
+                                        <!-- end icon thong bao -->
+                                        <!-- drop danh sach thong bao -->
+                                        <ul class="dropdown-menu notification">
+                                            <!-- một thông báo -->
+                                            <div class="d-flex">
+                                                <div class="nameCommented d-flex">
+                                                    <a href=""> <img class="img- video_avatar" alt="" src="./gai.jpg"></img>
+                                                    </a>
+                                                    <div class="d-flex">
+                                                        <p>Tài chính kinh doanh </p>
+
+                                                        <p>đã đăng video mới</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end -->
+                                            <!-- begin card comment -->
+                                            <div class="d-flex-column cardComment">
+                                                <!-- begin heder card comment -->
+                                                <div class="headerCommented border d-flex">
+                                                    <!-- bergin card like  -->
+                                                    <div class="d-flex border iconLikeVideo">
+                                                        <div class="d-flex flex-column">
+                                                            <a href=""><i class="fas fa-chevron-up"></i></a>
+                                                            <a href=""><i class="fas fa-chevron-down"></i></a>
+                                                        </div>
+                                                        <p>1000 Like</p>
+                                                    </div>
+                                                    <!-- end card like-->
+                                                    <!-- begin card info author video -->
+                                                    <div class="nameCommented d-flex">
+                                                        <a href="./user.html"> <img class="img- video_avatar" alt="" src="./gai.jpg"></img>
+                                                        </a>
+                                                        <a href="">
+                                                            <h4>Tài chính kinh doanh</h4>
+                                                        </a>
+                                                    </div>
+                                                    <!-- end card info author video -->
+                                                    <p>10 ngày trước</p>
+                                                </div>
+                                                <!-- end heder card comment -->
+                                                <!-- begin text commented -->
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nam cumque dolorem facere, hic fugit, magni similique labore ipsa unde placeat, mollitia quam aspernatur nihil ab architecto! Autem, facere
+                                                    nihil?
+                                                </p>
+                                                <!-- end text commented -->
+                                                <button class="ml-auto">Phản Hồi</button>
+                                                <div class="row">
+                                                    <div class="col-10 ml-auto">
+                                                        <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                                                    Xem các câu trả lời
+                                                                                </a>
+                                                        <div class="collapse" id="collapseExample">
+                                                            <div class="card card-body">
+                                                                <!-- begin heder card comment -->
+                                                                <div class="headerCommented border d-flex">
+                                                                    <!-- bergin card like  -->
+                                                                    <div class="d-flex border iconLikeVideo">
+                                                                        <div class="d-flex flex-column">
+                                                                            <a href=""><i class="fas fa-chevron-up"></i></a>
+                                                                            <a href=""><i class="fas fa-chevron-down"></i></a>
+                                                                        </div>
+                                                                        <p>1000 Like</p>
+                                                                    </div>
+                                                                    <!-- end card like-->
+                                                                    <!-- begin card info author video -->
+                                                                    <div class="nameCommented d-flex">
+                                                                        <a href=""> <img class="img- video_avatar" alt="" src="./gai.jpg"></img>
+                                                                        </a>
+                                                                        <a href="">
+                                                                            <h4>Tài chính kinh doanh</h4>
+                                                                        </a>
+                                                                    </div>
+                                                                    <!-- end card info author video -->
+                                                                    <p>10 ngày trước</p>
+                                                                </div>
+                                                                <!-- end heder card comment -->
+                                                                <!-- begin text commented -->
+                                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nam cumque dolorem facere, hic fugit, magni similique labore ipsa unde placeat, mollitia quam aspernatur nihil ab architecto!
+                                                                    Autem, facere nihil?</p>
+                                                                <!-- end text commented -->
+                                                                <button class="ml-auto">Phản Hồi</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <!--end card comment -->
+                                        </ul>
+                                        <!-- end drop danh sach thong bao -->
+                                    </div>
+                                    <!-- end thong bao -->
+                                    <!-- begin icon userMenu -->
+                                    <div class="btn-group dropstart">
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="./gai.jpg" style="height: 25px;" alt="">
+                                                            </button>
+                                        <ul class="dropdown-menu">
+                                            <!-- Dropdown menu links -->
+                                            <li><a class="dropdown-item" href="./user.html">Tài khoản</a></li>
+                                            <li><a class="dropdown-item" href="#">Đóng góp ý kiến</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- end icon userMenu -->
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end iconHeader -->
+                </nav>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- begin body user -->
+        <div class="row" style="padding-top: 20px;">
+
+
+            <!-- begin home page user -->
+            <div class="col-10 mx-auto">
+                <!-- begin heder user -->
+                <div class=" border d-flex flex-column">
+                    <img class="imgAvatar mx-auto" src="./bg_1.jpg" alt="">
+                    <img src="./gai.jpg" class="avatar rounded-circle mx-auto" alt="...">
+                    <!-- <img class="avatar mx-auto rounded-circle" src="./gai.jpg" alt="" > -->
+                    <h5 class="nameYouser mx-auto" style="margin-top: 20px;">Tai chin kinh doanh</h5>
+                </div>
+                <!-- begin button đăng ký -->
+                <div class=" d-flex flex-column subsUser">
+                    <button class="btn-btn-waning mx-auto">Đăng ký kênh</button>
+                    <div class="d-flex mx-auto">
+                        <p>1000</p>
+                        <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                        <p>Người đăng ký</p>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- end heder user -->
+
+                <!-- begin body user -->
+                <div class="bodyUser">
+                    <!-- begin menu user -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="videoList-tab" data-bs-toggle="tab" data-bs-target="#videoList" type="button" role="tab" aria-controls="videoList" aria-selected="false">video List</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="newsfeed-tab" data-bs-toggle="tab" data-bs-target="#newsfeed" type="button" role="tab" aria-controls="newsfeed" aria-selected="false">News feed</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+                        </li>
+
+                    </ul>
+                    <!-- end menu user -->
+
+                    <!-- begin content menu -->
+                    <div class="tab-content">
+                        <!-- begin content profile -->
+                        <div class="tab-pane show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="">
+                                <!-- begin text profile -->
+                                <!-- begin header tools text profile-->
+                                <div class="d-flex">
+
+                                    <h5>Giới thiệu kênh: </h5>
+
+                                    <button type="button" class="btn dropdown ml-auto" data-bs-toggle="modal" data-bs-target="#toolTextProfileModal" data-bs-whatever=""><i class="fas fa-pen"></i></button>
+
+                                    <!-- begin form tool text profile-->
+                                    <div class="modal fade" id="toolTextProfileModal" tabindex="-1" aria-labelledby="toolTextProfileModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="toolTextProfileModalLabel">Chỉnh sửa phần giới thiệu của bạn</h5>
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="introduceChannels-text" class="col-form-label">Giới thiệu kênh:</label>
+                                                            <textarea class="form-control" id="introduceChannels-text" style="height:200px"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Send introduceChannels</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end form tool -->
+                                </div>
+                                <!-- end -->
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus qui eum, maxime, ratione aut dolor numquam consequuntur corporis culpa praesentium quasi non, aliquid vitae. Unde corrupti officia quod nisi dolor.</p>
+                                <!-- end text profile -->
+                                <hr>
+                                <!-- begin video profile -->
+                                <!-- begin header videoProfile -->
+                                <div class="d-flex">
+                                    <h5>Video giới thiệu:</h5>
+                                    <!-- begin icon tools video profile-->
+                                    <button type="button" class="btn dropdown ml-auto" data-bs-toggle="modal" data-bs-target="#toolVideoProfileModal" data-bs-whatever=""><i class="fas fa-pen"></i></button>
+                                    <!-- end -->
+                                    <!-- begin form tool video profile-->
+                                    <div class="modal fade" id="toolVideoProfileModal" tabindex="-1" aria-labelledby="toolVideoProfileModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="toolVideoProfileModalLabel">Chỉnh sửa phần giới thiệu của bạn</h5>
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="introduceChannels-Video">Chọn Video giới thiệu của bạn</label>
+                                                            <input type="file" class="form-control-file" id="introduceChannels-Video">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Send introduce Video Channels</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end form tool -->
+                                </div>
+                                <!-- end header videoProfile -->
+                                <video width="100%" height="100%" controls class="videoPlay mx-auto" style="max-height:480px; max-width: 750px;">
+                                  <source src="./video1.mp4" type="video/mp4">
+                                  <source src="dammio.ogg" type="video/ogg">
+                                  Trình duyệt của bạn không hỗ trợ thẻ video.
+                                </video>
+                                <!-- end video profile -->
+                                <hr>
+                                <!-- begin from profile -->
+                                <!-- begin text profile -->
+                                <div class="d-flex">
+                                    <h5>Địa chỉ liên hệ: </h5>
+                                    <!-- begin icon tools from profile-->
+                                    <button type="button" class="btn dropdown ml-auto" data-bs-toggle="modal" data-bs-target="#toolFromProfileModal" data-bs-whatever=""><i class="fas fa-pen"></i></button>
+                                    <!-- end -->
+                                    <!-- begin form tool From profile-->
+                                    <div class="modal fade" id="toolFromProfileModal" tabindex="-1" aria-labelledby="toolFromProfileModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="toolFromProfileModalLabel">Chỉnh sửa phần giới thiệu của bạn</h5>
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="introduceChannels-from" class="col-form-label">Địa chỉ liên lạc:</label>
+                                                            <textarea class="form-control" id="introduceChannels-from" style="height:100px"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Send introduce From Channels</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end form tool -->
+                                </div>
+
+                                <p>Số điện thoại: 012382395213</p>
+                                <p>địa chỉ email: conbuomxuan@gmail.com</p>
+                                <!-- end from profile -->
+                            </div>
+                        </div>
+                        <!-- begin content videoList -->
+                        <div class="tab-pane" id="videoList" role="tabpanel" aria-labelledby="videoList-tab">
+                            <hr>
+
+
+                            <hr>
+                            <!-- begin listVideoCard -->
+                            <div class="col-xl-6 col-lg-4 col-md-6 col-sm-8 mr-auto">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <a href="./watching.html"><img class="imgListVideo" src="./bg_1.jpg" alt="..."></a>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tiêu Đề Tiêu Đề Tiêu Đề Tiêu Đề Tiêu Đề </h5>
+                                                <p class="card-text">Miêu tả: This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="statisticalVideo d-flex">
+                                                    <p>
+                                                        <div class="d-flex">
+                                                            <p>50</p>
+                                                            <p>Video</p>
+                                                        </div>
+                                                        <!-- begin button newVideo -->
+                                                        <button class="btn newVideoButton" type="button" data-bs-toggle="modal" data-bs-target="#newVideoModal" data-bs-whatever=""><i class="fas fa-plus">New Video</i></button>
+                                                        <!-- end button newVideo -->
+                                                        <!-- begin form tool newvideo-->
+                                                        <div class="modal fade" id="newVideoModal" tabindex="-1" aria-labelledby="newVideoModalModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="newVideoModalModalLabel">Tải lên video mới của bạn</h5>
+
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <form>
+                                                                            <div class="form-group">
+                                                                                <label for="new-Video">Chọn Video của bạn</label>
+                                                                                <input type="file" class="form-control-file" id="new-Video">
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="introduceNewVideo-from" class="col-form-label">Tiêu đề vủa Video</label>
+                                                                                <textarea class="form-control" id="introduceNewVideo-from" style="height:50px"></textarea>
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <label for="introduceNewVideo-from" class="col-form-label">Miêu tả video</label>
+                                                                                <textarea class="form-control" id="introduceNewVideo-from" style="height:100px"></textarea>
+                                                                            </div>
+                                                                            <hr>
+                                                                            <h3>Tài liệu Video</h3>
+                                                                            <div class="mb-3">
+                                                                                <label for="docsNewVideo-from" class="col-form-label">Thêm tài liệu</label>
+                                                                                <textarea class="form-control" placeholder="Nhập vào tài liệu của bạn" id="docsNewVideo-from" style="height:100px"></textarea>
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="file-Video">Chọn tài liệu từ máy của bạn</label>
+                                                                                <input type="file" class="form-control-file" id="file-Video">
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary">Send introduce Video Channels</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end form tool -->
+                                                    </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- begin showlistvideo -->
+                            <div>
+                                <a class="btn ml-auto" data-bs-toggle="collapse" href="#listVideo" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        Danh sách Video
+                                    </a>
+                                <div class="collapse" id="listVideo">
+                                    <div class="card card-body">
+                                        <!-- 00000 -->
+                                        <div class="row">
+                                            <!-- begin videoCard -->
+                                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 mr-auto">
+                                                <div class="videoCard">
+                                                    <a href="./watching.html"><img class="card-img videoCard_thumbnail" src="./bg_1.jpg" alt="" /></a>
+
+                                                    <div class="videoCard_info">
+
+                                                        <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img>
+                                                        </a>
+
+                                                        <div class="videoCard_text ">
+                                                            <h4>VNIndexch cán mốc 1500 điểm và những điều cần lưu ý</h4>
+                                                            <a href="./user.html" class="nameUser">
+                                                                <p>Tài chính và kinh doanh</p>
+                                                            </a>
+                                                            <div class="statisticalVideo d-flex">
+                                                                <div class="d-flex">
+                                                                    <p>2.500</p>
+                                                                    <p>views</p>
+                                                                </div>
+                                                                <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                <div class="d-flex">
+                                                                    <p>1000</p>
+                                                                    <p>like</p>
+                                                                </div>
+                                                                <div style="margin-left:2px; margin-right: 2px">&bull;</div>
+                                                                <p>1h</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end videoCard -->
+                                        </div>
+                                        <!-- 0000 -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- end showlistvideo -->
+                            <!-- end listVideoCard -->
+
+                        </div>
+                        <!-- end content videoList -->
+                        <!-- begin content newsfeed -->
+                        <div class="tab-pane" id="newsfeed" role="tabpanel" aria-labelledby="newsfeed-tab">
+                            <!-- begin new NEWs -->
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <!-- begin card author -->
+                                    <div class="d-flex nameUserWhatching">
+                                        <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img>
+                                        </a>
+                                        <a href="./user.html">
+                                            <p>Tài chính và kinh doanh</p>
+                                        </a>
+                                    </div>
+                                    <!-- end card author -->
+                                    <div class="d-flex flex-column">
+                                        <div class="">
+                                            <h5>Viết bài</h5>
+                                            <from>
+                                                <div class="mb-3">
+                                                    <label for="news-text" class="col-form-label">Bài viết của bạn</label>
+                                                    <textarea class="form-control" id="news-text" placeholder="thêm bài viết"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="file-News">Chọn tài liệu của Video</label>
+                                                    <input type="file" class="form-control-file" id="file-News">
+                                                </div>
+                                            </from>
+
+                                            <button class="btn btn-outline-success" type="submit">Đăng</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- end new NEWs -->
+                            <!-- begin news -->
+                            <div class="binhLuan d-flex-column fa-border">
+                                <!-- begin card News -->
+                                <div class="d-flex-column border cardComment">
+                                    <!-- begin heder card News -->
+                                    <div class="headerCommented border d-flex">
+                                        <!-- bergin card like  -->
+                                        <div class="d-flex border iconLikeComment">
+                                            <!-- begin iconLike -->
+                                            <div class="d-flex flex-column">
+                                                <a href=""><i class="fas fa-chevron-up"></i></a>
+                                                <a href=""><i class="fas fa-chevron-down"></i></a>
+                                            </div>
+                                            <!-- end iconLike -->
+                                            <!-- begin likeText -->
+                                            <div class="d-flex-column likeText">
+                                                <p>2000</p>
+                                                <p>Like</p>
+                                            </div>
+                                            <!-- end likeText -->
+
+                                        </div>
+                                        <!-- end card like-->
+                                        <!-- begin card info author video -->
+                                        <!-- begin card author -->
+                                        <div class="d-flex nameUserWhatching">
+                                            <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img>
+                                            </a>
+                                            <a href="./user.html">
+                                                <p>Tài chính và kinh doanh</p>
+                                            </a>
+                                        </div>
+                                        <!-- end card author -->
+                                        <!-- end card info author video -->
+                                        <p>10 ngày trước</p>
+                                    </div>
+                                    <!-- end heder card News -->
+                                    <!-- begin contentNews -->
+                                    <div class="row col-xl-10 col-lg-10 col-md-10 col-sm-10 mx-auto">
+
+                                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione quibusdam error culpa vitae, numquam commodi eveniet laudantium voluptas, natus ab cum aspernatur officiis nobis, quod ut fuga asperiores. Neque,
+                                            accusantium?
+                                        </P>
+
+                                        <!-- bigin img news -->
+                                        <img src="./bg_1.jpg" class="imgNews" alt="">
+                                        <!-- end img news -->
+                                        <!-- begin footer menu icon News -->
+                                        <div class="d-flex iconcommentShareNews">
+
+                                            <button class="btn " data-bs-toggle="collapse" href="#buttonNewComment" role="button" aria-expanded="false" aria-controls="buttonNewComment">
+                                                              <i class="far fa-comment">Trả lời</i>
+                                                          </button>
+                                            <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#buttonListComment" aria-expanded="false" aria-controls="buttonListComment">
+                                                              <i class="far fa-comments">Thảo luận</i>
+                                                          </button>
+                                            <button class="btn"><i class="fas fa-share-alt-square">Share</i></button>
+
+                                        </div>
+                                        <!-- end footer menu icon News -->
+                                        <!-- begin connect Icon new comment -->
+                                        <div class="collapse" id="buttonNewComment">
+
+                                            <div class="card card-body">
+
+                                                <div class="d-flex-column newComment">
+
+                                                    <div class="headerNewComment d-flex input-group ">
+                                                        <span class="input-group-text" id="basic-addon1">
+                                                                        <img class="img- video_avatar" alt="" src="./gai.jpg" ></img>
+                                                                    </span>
+                                                        <input type="text" style="height: 50px;" class="form-control" placeholder="Đặt câu hỏi hoặc viết bình luận của bạn..." aria-label="Username" aria-describedby="basic-addon1">
+                                                    </div>
+
+                                                    <div class="d-flex " style="margin-top:10px">
+                                                        <button class="btn  me-md-2 ml-auto" type="button">Gửi</button>
+                                                        <button class="btn " type="button">Hủy</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- end conect Icon new comment -->
+
+                                        <!-- begin connect button commentS -->
+                                        <div class="row">
+                                            <div class="col-10 ml-auto">
+
+                                                <div class="collapse" id="buttonListComment">
+                                                    <div class="card card-body">
+                                                        <!-- begin heder card comment -->
+                                                        <div class="headerCommented border d-flex">
+                                                            <!-- bergin card like  -->
+                                                            <div class="d-flex border iconLikeComment">
+                                                                <div class="d-flex flex-column">
+                                                                    <a href=""><i class="fas fa-chevron-up"></i></a>
+                                                                    <a href=""><i class="fas fa-chevron-down"></i></a>
+                                                                </div>
+                                                                <p>1000 Like</p>
+                                                            </div>
+                                                            <!-- end card like-->
+                                                            <!-- begin card info author video -->
+                                                            <!-- begin card author -->
+                                                            <div class="d-flex nameUserWhatching">
+                                                                <a href="./user.html"><img class="img-video_avatar rounded-circle" alt="" src="./gai.jpg"></img>
+                                                                </a>
+                                                                <a href="./user.html">
+                                                                    <p>Tài chính và kinh doanh</p>
+                                                                </a>
+                                                            </div>
+                                                            <!-- end card author -->
+                                                            <!-- end card info author video -->
+                                                            <p>10 ngày trước</p>
+                                                        </div>
+                                                        <!-- end heder card comment -->
+                                                        <!-- begin text commented -->
+                                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nam cumque dolorem facere, hic fugit, magni similique labore ipsa unde placeat, mollitia quam aspernatur nihil ab architecto! Autem,
+                                                            facere nihil?</p>
+                                                        <!-- end text commented -->
+                                                        <!-- begin button new comment -->
+                                                        <button class="btn border d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#a1buttonNewComment" aria-expanded="false" aria-controls="a1buttonNewComment">
+                                                                        Trả lời
+                                                                        </button>
+                                                        <div class="collapse" id="a1buttonNewComment">
+                                                            <div class="card card-body">
+                                                                <!-- begin new comment -->
+                                                                <div class="d-flex-column newComment">
+
+                                                                    <div class="headerNewComment d-flex input-group ">
+                                                                        <span class="input-group-text" id="basic-addon1">
+                                                                                        <img class="img- video_avatar" alt="" src="./gai.jpg" ></img>
+                                                                                    </span>
+                                                                        <input type="text" style="height: 50px;" class="form-control" placeholder="Đặt câu hỏi hoặc viết bình luận của bạn..." aria-label="Username" aria-describedby="basic-addon1">
+                                                                    </div>
+
+                                                                    <div class="d-flex " style="margin-top:10px">
+                                                                        <button class="btn  me-md-2 ml-auto" type="button">Gửi</button>
+                                                                        <button class="btn " type="button">Hủy</button>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- end new comment -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- end button new comment -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end comnect button comments -->
+                                        <hr>
+                                    </div>
+
+                                </div>
+                                <!--end card News -->
+                            </div>
+                            <!-- end news -->
+                        </div>
+                        <!-- end content newsfeed -->
+                        <!-- begin content settings -->
+                        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                            <div class="container">
+                                <div class="row ">
+                                    <hr>
+                                    <div class="col-12 formdangky mx-auto">
+
+                                        <div class="form-group">
+                                            <h2>Thông tin cá nhân</h2>
+                                            <div class="form-group">
+                                                <label for="file-Video">Chọn ảnh đại diện</label>
+                                                <input type="file" class="form-control-file" id="file-Video">
+                                            </div>
+                                            <hr>
+                                            <div class="form-group">
+                                                <label for="file-Video">Chọn ảnh bìa</label>
+                                                <input type="file" class="form-control-file" id="file-Video">
+                                            </div>
+                                            <hr>
+                                            <label for="">Nhập tên</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="tên của bạn là" aria-describedby="helpId">
+
+                                            <label for="">Nhập họ</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="họ của bạn là" aria-describedby="helpId">
+                                            <div class="form-group">
+                                                <label for="">Nhập địa  chỉ email</label>
+                                                <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="email@gmail.com">
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="introduceChannels-text" class="col-form-label">Giới thệu kênh:</label>
+                                                <textarea class="form-control" id="introduceChannels-text" style="height:100px"></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="introduceChannels-from" class="col-form-label">Địa chỉ liên hệ:</label>
+                                                <textarea class="form-control" id="introduceChannels-from" style="height:50px"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="myDate2">Năm sinh</label>
+                                                <input type="date" id="myDate2" class="form-control" min="1800-01-01" max="2024-12-30" value="0000-00-00">
+                                            </div>
+                                            <div class="form-check">
+                                                <label for="">chọn giới</label>
+                                                <br/>
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                          Nam
+                                        </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                          Nữ
+                                        </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                          Khác
+                                        </label>
+                                                <hr>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Cập nhật</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end content newsfeed -->
+                    </div>
+                    <!-- end content menu -->
+
+
+                </div>
+                <!--end body user -->
+            </div>
+            <!-- begin home page ser -->
+        </div>
+        <!-- end body user-->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>
