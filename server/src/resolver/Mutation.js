@@ -1,8 +1,8 @@
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { APP_SECRET, getUserId } = require('../utils')
-
-// Đăng ký người dùng mới
+    // const { REFRESH_TOKEN_SECRET } = env("REFRESH_TOKEN_SECRET") 
+    // Đăng ký người dùng mới
 async function signup(parent, args, context) {
     // Mã hóa password thành chuỗi không thể dịch lại dược trong db nhờ bcrypt
     const password = await bcrypt.hash(args.password, 10);
@@ -18,12 +18,27 @@ async function signup(parent, args, context) {
     });
     // Trả lại đoạn mã token nhờ jwt và đươc ký bởi APP_SECRET
     const token = jwt.sign({ userId: user.id }, APP_SECRET);
-    // xuất bản token và user sau khi đăng ký thành công
+    // Xuất bản token và user sau khi đăng ký thành công
     return {
         token,
         user
     };
 };
+const generateTokens = payload => {
+    const { userId } = payload
+    const getToken =
+        jwt.sign({
+                userId
+            },
+            APP_SECRET, { expiresIn: '15min' }
+        );
+    // const refreshToken = jwt.sign({ email, userId },
+    //     process.env.REFRESH_TOKEN_SECRET, {
+    //         expiresIn: "7d"
+    //     }
+    // );
+    return { getToken }
+}
 
 // Đăng nhập
 async function login(parent, args, context) {
@@ -40,11 +55,31 @@ async function login(parent, args, context) {
         throw new Error('Invalid password')
     };
     // Trả lại token sau sác thực bằng jwt và ký bằng APP_SECRET
-    const token = jwt.sign({ userId: user.id }, APP_SECRET);
+    // const token = jwt.sign({ userId: user.id }, APP_SECRET);
+    // const token = generateTokens({ userId: user.id });
+    const token = jwt.sign({ userId: user.id }, APP_SECRET, { expiresIn: '7d' })
+    const refreshToken = jwt.sign({ userId: user.id },
+        process.env.REFRESH_TOKEN_SECRET, {
+            expiresIn: "7d"
+        }
+    );
+    // tao mowis ngwoi dung
+    // const newUser = await context.prisma.user.update({
+    //     where: {
+
+    //         id: user.id
+    //     },
+    //     data: {
+    //         username: refreshToken
+    //     }
+
+    // })
+
     // Xuất bản token và user khi đã login thành công
     return {
         token,
         user,
+
     };
 };
 
@@ -73,11 +108,11 @@ async function createVideo(parent, args, context) {
     // tạo video mới
     const newVideo = await context.prisma.video.create({
         data: {
-            title: args.data.title,
-            description: args.data.description,
-            url: args.data.url,
-            thumbnail: args.data.thumbnail,
-            document: args.data.document,
+            title: args.title,
+            description: args.description,
+            url: args.url,
+            thumbnail: args.thumbnail,
+            document: args.document,
             user: {
                 // Kết nối user bằng userId với video mới
                 connect: { id: userId },
@@ -103,16 +138,16 @@ async function publishUser(parent, args, context) {
                 email: args.email,
                 avatar: args.avatar,
                 cover: args.cover,
-                about: args.cover,
+                about: args.about,
                 password: args.password
             }
 
         })
-        // trả về thông tin mới sau khi sửa
+        // Trả về thông tin mới sau khi sửa
     return publishUser
 };
 
-// sửa thông tin video
+// Sửa thông tin video
 async function publishVideo(parent, args, context) {
     // Lấy về id người dùng đã đăng nhập thành công
     const { userId } = context
@@ -142,30 +177,20 @@ async function publishVideo(parent, args, context) {
 async function videoLike(parent, args, context, info) {
     // Xác thực người dùng qua jwt và lấy id người dùng  
     const { userId } = context
-    // const where = [{
-    //         videoId: args.videoId
-    //     },
-    //     { userId: userId }
-    // ]
-    async function videoLike(parent, args, context) {
-        return await context.prisma.videoLike.findUnique({
-            where: {
-                videoId_userId: {
-                    videoId: args.videoId,
-                    userId: userId
-                }
 
-            },
-        });
-    }
+    const videoLike1 = await context.prisma.videoLike.findUnique({
+        where: {
+            userId_videoId: {
+                userId: userId,
+                videoId: (args.videoId),
+            }
+        },
 
-    //  Tìm kiếm xem người dùng đã like video hay chưa
-    // const videoLike = await context.prisma.videoLike.findUnique({
-    //     where,
-    // })
+    });
 
-    // nếu rồi thì chả lại thông báo lỗi
-    if (Boolean(videoLike)) {
+
+    // Nếu rồi thì chả lại thông báo lỗi
+    if (Boolean(videoLike1)) {
         throw new Error(`Already videoLiked for video: ${args.videoId}`)
     }
 

@@ -1,47 +1,60 @@
-navbar-expand-sm navbar-light bg-light{
+navbar-expand-sm navbar-light bg-light {
     background-color: blueviolet;
 }
-fa-bars a1{
+
+fa-bars a1 {
     border: 1px solid black;
 }
-.logo{
+
+.logo {
     max-height: 20px;
     flex: auto;
     margin-left: 2px;
 }
-.search_form{
+
+.search_form {
     float: 1
 }
 
-.avatavideoer{
+.avatavideoer {
     margin: auto;
     max-width: 10px;
     max-height: 10px;
 }
-.headerSideBar{
-    text-align:initial;
+
+.headerSideBar {
+    text-align: initial;
     margin-top: 1px;
-    
 }
+
+
 /* begin thông báo */
-.notification{
-    width: 500px; 
-    height: 700px; 
+
+.notification {
+    width: 500px;
+    height: 700px;
     overflow: auto;
     margin: auto;
     /* font-size: 18px; */
 }
-.notification :hover{
+
+.notification :hover {
     background: #e0dadd;
 }
-@media(max-width:576px){
-    .notification{
+
+@media(max-width:576px) {
+    .notification {
         width: 300px;
     }
 }
+
+
 /* end thông báo */
+
+
 /* begin sideBar */
-.sideBar{
+
+.sideBar {
     /* margin-top: flex; */
     padding: 0;
     box-sizing: border-box;
@@ -49,12 +62,12 @@ fa-bars a1{
     /* background-color: #000; */
     min-height: 100vh;
     color: rgb(74, 180, 184);
-    
 }
-.navigation{
+
+.navigation {
     position: fixed;
     /* cố định tại một điểm */
-    width: 290px;
+    width: 210px;
     height: 100%;
     background: #f5f6f7;
     transition: 0.1s;
@@ -63,35 +76,42 @@ fa-bars a1{
     /* Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
     margin-top: 50px;
 }
+
 .navigation:hover,
-.navigation.active{
+.navigation.active {
     /* margin-top: 80px; */
     width: 300px;
     z-index: 1;
 }
-.navigation ul{
+
+.navigation ul {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     margin-left: -50px;
 }
-.navigation ul li{
+
+.navigation ul li {
     position: relative;
-    width: 100%;
+    width: 210px;
     list-style: none;
 }
-.navigation ul li:hover{
+
+.navigation ul li:hover {
     background: #e0dadd;
+    width: 100%;
 }
-.navigation ul li a{
+
+.navigation ul li a {
     position: relative;
     display: flex;
     width: 100%;
     text-decoration: none;
     color: #303636;
 }
-.navigation ul li a .Icon{
+
+.navigation ul li a .Icon {
     position: relative;
     display: block;
     min-width: 60px;
@@ -99,10 +119,12 @@ fa-bars a1{
     line-height: 60px;
     text-align: center;
 }
-.navigation ul li a .Icon .fa{
+
+.navigation ul li a .Icon .fa {
     font-size: 24px;
 }
-.navigation ul li a .title{
+
+.navigation ul li a .title {
     position: relative;
     display: block;
     padding: 0 10px;
@@ -110,40 +132,51 @@ fa-bars a1{
     line-height: 60px;
     text-align: start;
     white-space: normal;
+    font-size: 15px;
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.toggle.active{
-    background-color:floralwhite;
+.toggle.active {
+    background-color: floralwhite;
 }
-@media(max-width:576px){
-    .navigation{
+
+@media(max-width:576px) {
+    .navigation {
         margin-top: -50px;
     }
 }
 
-@media(max-width: 1200px){
-    .navigation{
+@media(max-width: 1200px) {
+    .navigation {
         width: 35px;
-
     }
-    .navigation.active{
-        left:0px;
+    .navigation.active {
+        left: 0px;
         /* width: 100%; */
     }
 }
-@media(max-width: 992px){
-    .navigation{
-        left:-360px;
+
+@media(max-width: 992px) {
+    .navigation {
+        left: -360px;
         margin-top: 80px;
     }
-    .navigation.active{
-        left:0px;
+    .navigation.active {
+        left: 0px;
         /* width: 100%; */
     }
 }
+
+
 /* end sideBar */
+
+
 /* begin navigation1  */
-.navigation1{
+
+.navigation1 {
     position: fixed;
     /* cố định tại một điểm */
     width: 400px;
@@ -151,33 +184,36 @@ fa-bars a1{
     /* background: #f5f6f7; */
     transition: 0.1s;
     /* thời gian chuyển động */
-     margin-top: 50px;
+    margin-top: 50px;
 }
 
-
-.navigation1 ul{
+.navigation1 ul {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     margin-left: -50px;
 }
-.navigation1 ul li{
+
+.navigation1 ul li {
     position: relative;
     width: 100%;
     list-style: none;
 }
-.navigation1 ul li:hover{
+
+.navigation1 ul li:hover {
     background: #e0dadd;
 }
-.navigation1 ul li a{
+
+.navigation1 ul li a {
     position: relative;
     display: flex;
     width: 100%;
     text-decoration: none;
     color: #303636;
 }
-.navigation1 ul li a .Icon{
+
+.navigation1 ul li a .Icon {
     position: relative;
     display: block;
     min-width: 60px;
@@ -185,10 +221,12 @@ fa-bars a1{
     line-height: 60px;
     text-align: center;
 }
-.navigation1 ul li a .Icon .fa{
+
+.navigation1 ul li a .Icon .fa {
     font-size: 24px;
 }
-.navigation1 ul li a .title{
+
+.navigation1 ul li a .title {
     position: relative;
     display: block;
     padding: 0 10px;
@@ -197,278 +235,370 @@ fa-bars a1{
     text-align: start;
     white-space: normal;
 }
+
+
 /* end navigation1 */
-.veoVideo{
+
+.veoVideo {
     text-align: end;
     margin-top: 0.5px;
 }
-.imgavata{
+
+.imgavata {
     max-height: 30px;
     text-align: center;
 }
-.formdangky{
+
+.formdangky {
     border: 2px solid rgb(216, 213, 213);
     margin-top: 50px;
     /* max-width: 600px; */
-    
 }
 
-.titleNextvideo{
+.titleNextvideo {
     margin-bottom: 5px;
 }
-.size-font{
+
+.size-font {
     font-size: small;
 }
+
+
 /* begin .recomendedVideos*/
-.recommendedVideos{
+
+.recommendedVideos {
     flex: 0.8;
     background-color: rgb(241, 237, 232);
     padding: 40 20;
     padding-bottom: 0cm;
 }
-.recommendedVideos>h2{
+
+.recommendedVideos>h2 {
     margin-left: 5px;
     margin-bottom: 20px;
 }
 
-.recomendedVideos_videos{
+.recomendedVideos_videos {
     display: flex;
     flex-wrap: wrap;
 }
-.videoCard{
-    margin-bottom: 40px ;
+
+.videoCard {
+    margin-bottom: 40px;
     width: 270px;
-    
 }
-.videoCard_thumbnail{
+
+.videoCard_thumbnail {
     height: 140px;
     width: 250px;
 }
-.videoCard_info{
+
+.videoCard_info {
     display: flex;
     margin-top: 10px;
-    padding-right: 10;
+    padding-right: 5px;
 }
 
-.videoCard_text{
-    margin-left: 15px;
+.videoCard_info_text {
+    margin-left: 5px;
 }
-.videoCard_text> h4 {
-    font-size: 18px;
+
+.videoCard_info_text>h4 {
+    font-size: 15px;
     margin-bottom: 5px;
+    white-space: 10px;
+    width: 205px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
-.videoCard_text> p {
+
+.videoCard_info_text>p {
     font-size: 14px;
     color: gray;
 }
 
-.nameUser{
+.nameUser {
     text-decoration: none;
     color: gray;
 }
-.nameUser:hover{
+
+.nameUser:hover {
     text-decoration: none;
     color: rgb(22, 21, 21);
 }
-.statisticalVideo{
+
+.dots {
+    margin-Left: '1px';
+    margin-Right: '1px';
+}
+
+.statisticalVideo {
     color: gray;
     display: flex;
-    justify-content: space-around 
+    /* justify-content: space-around */
 }
-.statisticalVideo div{
+
+.statisticalVideo div {
     margin-top: 10px;
 }
-.statisticalVideo button{
+
+.statisticalVideo button {
     color: gray;
 }
-.video_avatar{
+
+.video_avatar {
     height: 30px;
     width: 30px;
-    
 }
-.test{
+
+.test {
     display: flex;
 }
-.logo_header{
+
+.logo_header {
     flex: 1;
 }
+
+
 /* begin playVideo */
-.bodyWhatching{
+
+.bodyWatching {
     margin-top: 600px;
 }
-.videoPlay{
+
+.videoPlay {
     margin-top: 20px;
 }
-.videoPlaying{
+
+.videoPlaying {
     margin-top: 50px;
     padding-top: 10px;
 }
-.nameUserWhatching{
+
+.nameUserWatching {
     margin: 10px;
 }
-.nameUserWhatching a p{
+
+.nameUserWatching a p {
     font-size: 20px
 }
-.nameUserWhatching a p{
+
+.nameUserWatching a p {
     text-decoration: none;
     color: rgb(22, 21, 21);
     margin: auto;
-     margin-right: 5px;
-     white-space: nowrap; 
-     width: 200px; 
-     overflow: hidden;
-     text-overflow: ellipsis; 
-    
+    margin-right: 5px;
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.nameUserWhatching a p:hover{
+
+.nameUserWatching a p:hover {
     text-decoration: none;
     color: rgb(170, 14, 14);
-
 }
-@media(max-width:576px){ 
-    .videoPlaying{
+
+@media(max-width:576px) {
+    .videoPlaying {
         /* margin-top: 80px; */
-       
         padding-top: 10px;
     }
 }
-@media(max-width:1200px){
-    .videoCard{
+
+@media(max-width:1200px) {
+    .videoCard {
         margin-left: 90px;
     }
 }
+
+
 /* begin intVideo */
-.headerCommented{
+
+.headerCommented {
     height: 65px;
 }
-.iconLikeComment{
-    margin-right:40px; 
-    border:2px;
+
+.iconLikeComment {
+    margin-right: 40px;
+    border: 2px;
     border-radius: .25rem!important;
-    padding-left: 10px; 
+    padding-left: 10px;
     padding-right: 10px;
     height: 50px;
     margin: 4px;
     margin-right: 5px;
     max-width: 70px;
 }
-.iconLikeComment p{
+
+.iconLikeComment p {
     margin-left: 10px;
     margin-top: 10px;
 }
-.iconLikeVideo div{
+
+.iconLikeVideo div {
     margin-left: 5px;
 }
-.likeTextVideo{
+
+.likeTextVideo {
     width: 60px;
     height: 50px;
 }
-.likeTextVideo p{
+
+.likeTextVideo p {
     height: 10px;
     margin-left: 5px;
 }
-.iconLikeVideo{
+
+.iconLikeVideo {
     height: 50px;
     margin-top: 5px;
     margin-left: 3px;
 }
-.likeText{
+
+.likeText {
     margin-left: 3px;
     margin: 1px;
-    padding: 1px; 
+    padding: 1px;
     width: 60px;
     height: 55px;
 }
-.likeText p{
+
+.likeText p {
     height: 20px;
 }
-.shareVideo{
+
+.shareVideo {
     height: 50px;
     margin-top: 5px;
 }
-.shareVideo a i{
+
+.shareVideo a i {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 15px;
 }
-.shareVideo p{
+
+.shareVideo p {
     margin-right: 10px;
     margin-top: 10px;
 }
+
+
 /* end intVideo */
+
+
 /* begin comment */
-    .newComment{
-        margin-top:10px;
-        margin-bottom: 20px;
-    }
-    .img-video_avatar{
-        margin: 1px;
-        width: 40px;
-        height: 40px;
-    }
-    .imgAvatar{
-        height: 400px; 
-        width: 90%
-    }
-    .avatar{
-        width: 200px;height: 200px;z-index: 1;margin-top: -100px;
-    }
-    .nameCommented{
-        margin: 10px;
-        margin-left: 2px;
-        
-    }
-    .nameCommented a {
-        margin: 2px;
-    }
-    .headerCommented p {
-        margin: auto;
-        margin-right: 10px;
-    }
+
+.newComment {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.img-video_avatar {
+    margin: 1px;
+    width: 40px;
+    height: 40px;
+}
+
+.imgAvatar {
+    height: 400px;
+    width: 90%
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    margin-top: -100px;
+}
+
+.nameCommented {
+    margin: 10px;
+    margin-left: 2px;
+}
+
+.nameCommented a {
+    margin: 2px;
+}
+
+.headerCommented p {
+    margin: auto;
+    margin-right: 10px;
+}
+
+.comment {
+    margin-top: 25px;
+}
+
+
 /* end comment */
+
+
 /* end videoPlay */
+
+
 /* begin nextVideo */
-.nextVideo{
-    min-width: 300px; 
-    
+
+.nextVideo {
+    min-width: 300px;
     background: #dbe4e4;
     margin-top: 100px;
 }
 
-.videoCard{margin: 5px}
-@media(min-width:1000px){
-    .videoCard{
+.videoCard {
+    margin: 5px
+}
+
+@media(min-width:1000px) {
+    .videoCard {
         margin-right: 80px;
     }
 }
+
+
 /* end nextVideo */
+
+
 /* begin user */
-    .bodyUser{
-        margin-top:20px;
-    }
-    .imgListVideo{
-        width: 180px;
-        height: 200px;
-    }
-    
+
+.bodyUser {
+    margin-top: 20px;
+}
+
+.imgListVideo {
+    width: 180px;
+    height: 200px;
+}
+
+
 /* end */
+
+
 /* begin newsfeed */
-.newsfeed{
+
+.newsfeed {
     margin-top: 100px;
 }
-.imgNews{
+
+.imgNews {
     max-width: 750px;
     max-height: 450px;
 }
+
+
 /* end newsfeed */
-.subsUser{
-    
+
+.subsUser {
     max-width: 250px;
     max-height: 200px;
     padding-top: 10px;
     margin: auto;
 }
-.subsUser button{
+
+.subsUser button {
     width: 150px;
     margin-left: 10px;
     height: 50px;
@@ -477,10 +607,12 @@ fa-bars a1{
     padding: auto;
     color: hsl(120, 44%, 93%);
 }
-.subsUser p{
+
+.subsUser p {
     color: hsl(120, 3%, 46%);
 }
-.newVideoButton{
+
+.newVideoButton {
     width: 150px;
     margin-left: 10px;
     height: 50px;
@@ -489,30 +621,37 @@ fa-bars a1{
     padding: auto;
     color: hsl(120, 44%, 93%);
 }
-.newVideoButton p{
+
+.newVideoButton p {
     color: hsl(120, 3%, 46%);
 }
-.newVideoButton i{
- margin-right: 5px;
+
+.newVideoButton i {
+    margin-right: 5px;
 }
+
 .iconToolImg i {
- color: #000;
- background-color: #f1e9e9;
- margin-right: 100px
+    color: #000;
+    background-color: #f1e9e9;
+    margin-right: 100px
 }
-.iconToolImg i:hover{
+
+.iconToolImg i:hover {
     background-color: #000;
     color: #f1e9e9;
 }
-.UserCard{
+
+.UserCard {
     /* margin-top: 20px;
     margin-left: 10px */
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
-.iconcommentShareNews{
+
+.iconcommentShareNews {
     display: flex;
     justify-content: flex-end
 }
-.iconcommentShareNews button{
+
+.iconcommentShareNews button {
     margin: 10px;
 }

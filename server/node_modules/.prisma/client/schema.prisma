@@ -49,6 +49,8 @@ model VideoLike {
   videoId   String
   user      User     @relation(fields: [userId], references: [id])
   video     Video    @relation(fields: [videoId], references: [id])
+
+  @@unique([userId, videoId])
 }
 
 model View {
@@ -77,4 +79,6 @@ model UserSubscription {
   subscribedToId String
   subscriber     User     @relation("subscriber", fields: [subscriberId], references: [id])
   subscribedTo   User     @relation("subscribedTo", fields: [subscribedToId], references: [id])
+
+  @@unique([subscriberId, subscribedToId])
 }

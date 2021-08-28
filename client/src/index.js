@@ -6,11 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-    <App/>
-    </BrowserRouter>
-  </React.StrictMode>,
+  // <ApolloProvider client={client}>
+    <React.StrictMode>
+        <BrowserRouter>
+        <App/>
+        </BrowserRouter>
+    </React.StrictMode>,
+  // </ApolloProvider>,
+  
   document.getElementById('root')
 );
 

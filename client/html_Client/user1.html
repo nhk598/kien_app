@@ -424,7 +424,43 @@
                         <!-- begin content videoList -->
                         <div class="tab-pane" id="videoList" role="tabpanel" aria-labelledby="videoList-tab">
                             <hr>
+                            <!-- begin button NewVideoList -->
+                            <button class="btn btn-secondary NewVideoListButton" type="button" data-bs-toggle="modal" data-bs-target="#NewVideoListModal" data-bs-whatever=""><i class="fas fa-plus">New VideoList</i></button>
+                            <!-- end button NewVideoList -->
+                            <!-- begin form tool NewVideoList-->
+                            <div class="modal fade" id="NewVideoListModal" tabindex="-1" aria-labelledby="NewVideoListModalModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="NewVideoListModalModalLabel">Tạo danh sách VideoList mới</h5>
 
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="introduceNewVideoList-from" class="col-form-label">Tên của VideoList</label>
+                                                    <textarea class="form-control" id="introduceNewVideoList-from" style="height:50px"></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="introduceNewVideoList-from" class="col-form-label">Miêu tả VideoList</label>
+                                                    <textarea class="form-control" id="introduceNewVideoList-from" style="height:100px"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="new-Video">Chọn ảnh đại diện của videoList</label>
+                                                    <input type="file" class="form-control-file" id="new-Video">
+                                                </div>
+                                                <hr>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
+                                            <button type="button" class="btn btn-primary">Tạo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end form tool -->
 
                             <hr>
                             <!-- begin listVideoCard -->
@@ -444,7 +480,7 @@
                                                             <p>50</p>
                                                             <p>Video</p>
                                                         </div>
-                                                        <!-- begin button newVideo -->
+                                                        <!-- begin button NewVideo -->
                                                         <button class="btn newVideoButton" type="button" data-bs-toggle="modal" data-bs-target="#newVideoModal" data-bs-whatever=""><i class="fas fa-plus">New Video</i></button>
                                                         <!-- end button newVideo -->
                                                         <!-- begin form tool newvideo-->

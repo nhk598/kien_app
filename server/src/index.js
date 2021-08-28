@@ -12,8 +12,10 @@ const VideoLike = require('./resolver/VideoLike')
 const View = require('./resolver/View')
 const Comment = require('./resolver/Comment')
 const UserSubscription = require('./resolver/UserSubscription')
+const cors = require('cors')
     // import prisma =>kết nối database
 const { prisma } = require('../db/Data')
+const depthLimit = require('graphql-depth-limit')
 const fs = require('fs');
 // import module xác định userId từ req
 const { getUserId } = require('./utils');
@@ -35,6 +37,8 @@ const resolvers = {
 const server = new ApolloServer({
     resolvers,
     typeDefs,
+    // Giới hạn độ sau của truy vấn là 4
+    validationRules: [depthLimit(4)],
     context: ({ req }) => {
         return {
             ...req,
@@ -45,6 +49,7 @@ const server = new ApolloServer({
         };
     }
 });
+
 server.listen()
     .then(({ url }) =>
         console.log(`Server is running on ${url}`)

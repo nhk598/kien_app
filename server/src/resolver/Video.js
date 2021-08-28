@@ -15,19 +15,25 @@ function videoLikes(parent, args, context) {
 };
 
 // Trả lại thông tin lượt xem của video
-function views(parent, args, context) {
-    return context.prisma.video.findUnique({ where: { id: parent.id } }).views()
+function view(parent, args, context) {
+    return context.prisma.video
+        .findUnique({
+            where: { id: parent.id }
+        }).view()
 };
 
 // Trả lại thông tin các comment của video: Lấy danh sách các comment
-function comments(parent, args, context) {
-    return context.prisma.video.findUnique({ where: { id: parent.id } }).comments()
+function comment(parent, args, context) {
+    return context.prisma.video
+        .findUnique({
+            where: { id: parent.id }
+        }).comment()
 };
 
 // Xuất bản các module
 module.exports = {
     user,
     videoLikes,
-    comments,
-    views,
+    comment,
+    view,
 }

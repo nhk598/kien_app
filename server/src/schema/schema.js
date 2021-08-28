@@ -1,6 +1,18 @@
 const { gql } = require('apollo-server');
 const typeDefs = gql `
 scalar DateTime
+ 
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
+
+directive @cacheControl(
+  maxAge: Int
+  scope: CacheControlScope
+  inheritMaxAge: Boolean
+) on FIELD_DEFINITION | OBJECT | INTERFACE | UNION
+
 type User {
   id:           ID!         
   createdAt :   DateTime    
@@ -11,11 +23,11 @@ type User {
   cover:        String         
   about:        String
   videos:       [Video!]!
-  videoLikes:   [VideoLike!]
-  views:         [View!]!
-  comments:      [Comment!]!
-  subscribers  :[UserSubscription]
-  subscribedTo :[UserSubscription]
+  videoLikes:   [VideoLike!] 
+  view:         [View!]! 
+  comment:      [Comment!]!
+  subscribers  :[UserSubscription] @cacheControl(maxAge: 30)
+  subscribedTo :[UserSubscription] @cacheControl(maxAge: 30, scope: PRIVATE)
 }
 
 type Video{
@@ -28,9 +40,9 @@ type Video{
   document:    String
   userId:      String
   user:        User
-  videoLikes:   [VideoLike!]!
-  views:        [View!]!
-  comments:      [Comment!]!
+  videoLikes:   [VideoLike!]! @cacheControl(maxAge: 30)
+  view:        [View!]! @cacheControl(maxAge: 30)
+  comment:      [Comment!]!
 }   
 
 type AuthPayload{
@@ -81,8 +93,17 @@ type Query{
   users:[User!]!
   videos:[Video!]!
   user(id:ID!): User
+  userManage: User
   video(id:ID!): Video
-  videoLike(videoId:ID): VideoLike
+  videoLike(VideoId:String!): VideoLike
+  videosLike(skip: String, take: String): [VideoLike]
+  videosSearch(filter: String, skip: String, take: String): [Video]
+  videosRecommended:[Video!]!
+  comment(videoId: String!): [Comment]
+  videosWatched(skip: String, take: String): [View]
+  videosUser(userId: String!,skip: String, take: String):[Video]
+  videosUserManage(skip: String, take: String):[Video]
+  subscribedTo: UserSubscription
 }
 
 type Subscription {
@@ -97,7 +118,7 @@ type Mutation{
   signup(email: String!, password: String!, username: String!): AuthPayload
   login(email: String!, password: String!): AuthPayload
   createUser(data: UserCreateInput!): User!
-  createVideo(data: VideoCreateInput): Video!
+  createVideo(title: String, description: String, url: String!, thumbnail: String!, document: String ): Video!
   publishUser(username: String, password: String, email: String, avatar: String, cover: String, about: String):User!
   publishVideo(id:ID!, title: String, description: String, url: String, thumbnail: String, document: String, userId: String):Video!
   videoLike(videoId: String): VideoLike
@@ -106,11 +127,12 @@ type Mutation{
   userSubscription(userId: ID!): UserSubscription
 }
 
+ 
 input VideoCreateInput {
    title: String
    description: String
-   url: String
-   thumbnail: String
+   url: String!
+   thumbnail: String!
    document: String
    userId: ID
 }
